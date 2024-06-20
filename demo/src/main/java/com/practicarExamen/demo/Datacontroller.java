@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
-public class Datacontroller {
-
-
-
     @RestController
     public class Datacontroller {
         @PostMapping(value = "/ships",
@@ -42,4 +38,4 @@ public class Datacontroller {
             return new ResponseEntity<>(shipsList, HttpStatus.OK);
         }
     }
-}
+
