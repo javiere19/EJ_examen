@@ -11,7 +11,7 @@ public class ControlPDF {
     public void createPDF(Spaceship ship){
         try {
             Document document = new Document(PageSize.A4, 50, 50, 100, 72);
-            PdfWriter.getInstance(document, new FileOutputStream("./Back/naves/" + ship.getName() + ".pdf"));
+            PdfWriter.getInstance(document, new FileOutputStream("./Demo/naves/" + ship.getName() + ".pdf"));
 
             document.open();
 
@@ -33,7 +33,7 @@ public class ControlPDF {
     public void createPDF2(List<Spaceship> spaceships) {
         try {
             Document document = new Document(PageSize.A4, 50, 50, 100, 72);
-            PdfWriter.getInstance(document, new FileOutputStream("./Back/PDF_Completo/naves_completo.pdf"));
+            PdfWriter.getInstance(document, new FileOutputStream("./Demo/PDF_Completo/naves_completo.pdf"));
 
             document.open();
 
